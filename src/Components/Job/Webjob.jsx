@@ -137,18 +137,7 @@ function Webjob(props) {
       }
       icon={(job.applicants.viewedby.includes(user.uid)||job.applicants.accepted.includes(user.uid))?`fas fa-envelope-open applyicon`:'fal fa-envelope applyicon'}
       />
-    }   <Icon 
-    clickEvent={()=>(job.applicants.viewedby.includes(user.uid)||job.applicants.accepted.includes(user.uid))?
-     addNotification({
-      msg: 'Application already sent!',
-      icon: 'fal fa-exclamation-triangle',
-      notificationsystem: webnotifications
-      })
-      :
-      sendApplication()  
-    }
-    icon={(job.applicants.viewedby.includes(user.uid)||job.applicants.accepted.includes(user.uid))?`fas fa-envelope-open applyicon`:'fal fa-envelope applyicon'}
-    />
+    }  
   </div>
 }
 export default Webjob
