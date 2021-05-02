@@ -1,0 +1,108 @@
+.sidebar {
+  background-color: #09012f;
+  padding: 10px;
+  border-radius: 0 10px 10px 0;
+  transition: all 0.5s;
+  width: 210px;
+  overflow-x: hidden;
+  height: 100vh;
+  overflow-y: scroll
+}
+.sidebar::-webkit-scrollbar {
+  width: 0px
+}
+.sidebar .upper .user {
+  background-color: var(--light);
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-right: 10px
+}
+.sidebar .upper .user a{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  color: #fff;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sidebar .upper .user a img {
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.sidebar .upper .themeBtn {
+  height: 40px;
+  margin-top: 20px;
+  margin-right: 10px;
+  width: 100%;
+  background-color: var(--theme-second)
+}
+.sidebarlinks {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-top: 20px;
+}
+ .sidebarlinks a {
+  padding:  10px 15px ;
+  border-radius: 10px 0 0 10px;
+  margin: 5px;
+  margin-right: 0
+
+} 
+ .sidebarlinks a:hover, .sidebarlinks .activesidelink {
+  background-color: var(--gray);
+}
+.sidebarlinks a:hover small, .sidebarlinks a:hover i, .sidebarlinks .activesidelink small, .sidebarlinks .activesidelink i  {
+  color: var(--theme-color) 
+} 
+.activeBtn button{
+  filter: opacity(70%)
+}
+.activeBtn .themeBtn:active {
+  transform: scale(1)
+}
+.sidebarlinks span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.sidebarlinks small, .sidebarlinks i {
+  font-size: 15px;
+  color: var(--gray-text);
+}
+.lower span .graytext {
+  color: #fff;
+}
+.lower .contenttext {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  z-index: 1;
+  transform: translateY(-50%)
+}
+.lower .contenttext button {
+  width: 100%;
+  background-color: var(--theme-second)
+}
+.lower img {
+  width: calc(100% + 20px);
+  height: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: brightness(40%)
+}
+@media (max-width: 800px) {
+
+  .sidebar {
+    width: 150px;
+  }
+  .sidebar .upper .themeBtn i{
+    display: none
+  }
+  .sidebar  .sidebarlinks {
+    width: 150px
+  }
+}

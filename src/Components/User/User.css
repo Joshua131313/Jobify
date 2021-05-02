@@ -1,0 +1,50 @@
+.user {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s
+
+}
+.user p {
+  margin-right: 10px;
+}
+
+ .app .loginuser:hover .dot{
+  opacity: 1 ;
+}
+.user .loginuser  {
+    display: flex;
+    flex-direction: column
+}
+.user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%
+}
+.user a small {
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.user a small span {
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.3s
+}
+.user a small span:last-of-type {
+  font-size: 12px;
+  color: var(--gray-text);
+}
+.user .companyuser img {
+  border-radius: 10px 
+}
+.user a > div[aria-busy='true'] {
+  margin-right: 5px;
+  margin-top: 5px
+}

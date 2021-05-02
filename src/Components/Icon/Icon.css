@@ -1,0 +1,22 @@
+
+.icon {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  background-color: var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  box-shadow: var(--light-shadow);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 20;
+} 
+.icon:active {
+  transform: scale(0.95)
+}
+.icon:hover {
+  background-color: var(--theme-color);
+  color: var(--gray)
+}

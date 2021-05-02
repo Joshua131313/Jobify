@@ -1,0 +1,249 @@
+.dashboard {
+  width: 100%
+}
+.firstpart{
+  width: 100%
+}
+.dashboard .firstpart .boxenotis {
+  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px
+}
+.dashboard .firstpart .boxenotis div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.firstpart .boxenotis  .box {
+  width: 110px;
+  height: 110px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid 1px #f0f0f2;
+  margin: 5px;
+  border-radius: 5px;
+}
+.boxenotis .box:hover {
+  background-color: var(--light-blue)
+}
+.boxenotis .box:active {
+  transform: scale(0.95)
+}
+
+
+.secondpart {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 15px;
+  grid-template-rows: repeat(5, 180px)
+}
+.secondpart > div {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px
+}
+.secondpart .joblistings{
+  grid-column: 2/3;
+  grid-row: 1/4;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.header {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  position: sticky;
+  top: -20px;
+  z-index: 100;
+  width: 100%;
+  box-shadow: var(--light-shadow)
+}
+.header .searchbar {
+  width: 60%;
+}
+.header .user {
+  background-color: var(--gray);
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 10px
+}
+.header .user:hover { 
+  background-color: var(--light-blue)
+}
+.header .user:active {
+  transform: scale(0.97)
+}
+.header .searchbar input{
+  width: 100%;
+  padding-left: 30px
+}
+.header .searchbar i {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px
+}
+.overview {
+  grid-row: span 2;
+  
+}
+.overview h2 {
+  margin-bottom: 20px;
+  padding: 20px 10px
+}
+.numcont {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.numcont div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px
+}
+.numcont div:nth-of-type(even) {
+  border: solid 1px #f0f0f2;
+  border-top: none;
+  border-bottom: none
+}
+.numcont div span {
+  display: flex;
+  font-size: 18px;
+  margin-bottom: 5px
+}
+.numcont div span strong{
+  margin-right: 8px;
+}
+.numcont div span i {
+  font-size: 14px;
+  background-color: var(--light-blue);
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.numcont div span .fa-arrow-down {
+  color: var(--red);
+  background-color: #fcedea
+}
+.inforow {
+  display: flex;
+  flex-direction: column;
+  
+}
+.inforow > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0
+}
+
+.joblistings .listings {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.secondpart > div > h2, .firstpart .boxenotis > h2 {
+  padding: 20px 10px
+}
+.secondpart .user:hover {
+  background-color: var(--light-blue);
+}
+.secondpart .user:active {
+  transform: scale(0.99)
+}
+.secondpart .user  {
+  border-radius: 10px;
+  transition: all 0.3s;
+  padding: 10px 
+}
+.joblistings .listings .user a{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.joblistings .listings .user img {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+}
+.joblistings .listings .user a span {
+  font-size: 14px;
+  width: 200px
+}
+.upcoming {
+  grid-column: 2/3;
+  grid-row: span 3;
+}
+.upcoming > .viewall {
+  color: var(--theme-color);
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.upcoming .user {
+  padding: 12px 10px
+}
+.viewall i {
+  font-size: 14px
+}
+.tasks {
+  grid-column: 2/-1;
+  grid-row: span 2;
+}
+.interview .date{
+  position: absolute;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%)
+}
+.header .dropdown a {
+  background-color: red;
+}
+.routes .inforow  .flexcenter {
+  justify-content: center;
+}
+.overview {
+  grid-row: span 3
+}
+.viewschart {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  grid-row: 4/7
+}
+.viewschart h2 {
+  align-self: flex-start
+}
+@media (max-width:880px) {
+  .secondpart {
+    display: block;
+  } 
+  .secondpart > div {
+    margin-top: 15px
+  }
+  .joblistings .listings .user a span {
+    width: 90%;
+  } 
+}

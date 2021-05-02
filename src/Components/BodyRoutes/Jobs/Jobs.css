@@ -1,0 +1,150 @@
+
+.jobs h2 {
+  padding:20px 10px;
+}
+.alljobs {
+  padding: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
+  display: grid
+}
+.recenttitle {
+  padding: 10px;
+  margin-top: 15px
+}
+.flexwrapped {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center
+}
+.elementicon.flat {
+  border-radius: 0
+}
+.elementicon {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px
+}
+.elementicon > span {
+  padding: 10px;
+  transition: all 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.elementicon >span:hover i, .elementicon > span:hover small {
+  color: #fff
+}
+.gridview .elementicon span{
+  background-color: var(--theme-color)
+}
+.gridview .elementicon span i, .gridview .elementicon span small {
+  color: #fff
+}
+.elementicon > span:hover {
+  background-color: var(--theme-color);
+}
+.elementicon span:active {
+  transform: scale(0.96)
+}
+.elementicon i {
+  margin-right: 5px;
+  font-size: 18px
+}
+.elementicon span small {
+  font-size: 15px;
+}
+.gridview.alljobs{
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  align-items: center;
+} 
+.jobs .jobcard {
+  background-color: var(--gray)
+}
+.gridcont {
+  display: none; 
+}
+.extracontent {
+  display: none
+}
+.gridview .extracontent {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 9px;
+  flex-direction: column;
+  overflow-y: scroll;
+  transition: all 0.3s;
+  cursor: pointer;
+  opacity: 0;
+  padding: 10px;
+  transform: scale(0.66);
+  cursor: auto
+}
+.extracontent::-webkit-scrollbar {
+  width: 0px;
+}
+.gridview .sectionimg:hover .extracontent {
+  opacity: 1;
+  transform: scale(0.87)
+}
+.gridview .extracontent h3 {
+  margin: 5px 0
+}
+.absoluteicon {
+  position: absolute;
+  top: 0;
+  justify-content: flex-end;
+  right: 0;
+  display: none
+}
+.gridview .absoluteicon {
+  display: flex
+}
+.absoluteicon i {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.gridview .jobcard .user {
+  display: none;
+}
+.gridview .jobcard {
+  height: 220px;
+  width: 220px
+}
+.dashboard .alljobs {
+  grid-template-columns: repeat(auto-fill, minmax(300px,1fr))
+}
+.activegridviewbtn > span {
+  background-color: var(--theme-color);
+}
+.activegridviewbtn > span i, .activegridviewbtn > span .graytext {
+  color: #fff
+}
+@media (max-width: 600px) {
+  .dashboard .alljobs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse
+  }
+  .dashboard .alljobs .jobcard {
+    height: 220px;
+    width: 220px
+  }
+  .dashboard .alljobs .jobcard .user {
+    display: none
+  }
+  .dashboard .alljobs  >a {
+    margin: 20px 0
+  }
+}

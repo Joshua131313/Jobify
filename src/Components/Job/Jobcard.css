@@ -1,0 +1,114 @@
+.jobcard {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+  max-height: 300px;
+  overflow-y: scroll;
+  position: relative
+}
+.jobcard a {  
+  display: flex;
+  flex-direction: column;
+}
+.jobcard:hover {
+  /* background-color: var(--theme-color); */
+  transform: translateY(-10px);
+  box-shadow: 0px 17px 19px -10px var(--theme-color);
+} 
+.jobcard:active {
+  box-shadow: none
+ }/*
+.jobcard:hover .jobtitle i, 
+.jobcard:hover .jobtitle h3, 
+.jobcard:hover .location input,
+.jobcard:hover > div,
+.jobcard:hover .graytext {
+  color: #fff
+} */
+.jobcard::-webkit-scrollbar {
+  width: 0px
+}
+.jobcard .jobtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #000
+}
+.jobcard .jobtitle i {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #000
+}
+.jobcard > div {
+  margin: 5px 0;
+  color: #000
+}
+.jobcard div > * {
+  margin: 5px 0
+}
+.jobcard .location {
+  width: 100%
+}
+.jobcard .location input{
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.jobcard .editicon {
+  position: absolute
+}
+.jobcard .jobdescription {
+  color:#000
+}
+
+.jobcard .jobdescription::-webkit-scrollbar {
+  width: 0px;
+  height: 0
+}
+.jobcard .user {
+ align-self: flex-end;
+ background-color: var(--gray);
+ padding: 5px 15px;
+ border-radius: 10px;
+ position: sticky;
+ bottom: -10px;
+ backdrop-filter: blur(5px);
+ box-shadow: var(--light-shadow);
+ max-width: 150px;
+ min-height: 50px;
+ overflow: hidden; 
+ text-overflow: ellipsis;
+
+}
+.jobcard .user a small span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 90px ;
+}
+
+/* .jobcard:hover .user {
+  background-color: var(--light);
+}
+.jobcard:hover .user span, .jobcard:hover .user time{
+  color: #fff
+}
+.jobcard .user:hover {
+  background-color: var(--light)
+} */
+.jobcard .user .joblisting {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.jobcard .user img {
+  margin-right: 5px
+}
+.jobcard .editicon {
+  position: absolute;
+  top: 10px;
+  right: 20px
+}

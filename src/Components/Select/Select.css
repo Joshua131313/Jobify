@@ -1,0 +1,65 @@
+
+.options {
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: var(--shadow);
+  width:100%;
+  opacity: 0;
+  transition: all 0.3s;
+  position: absolute;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll; 
+  border-radius: 10px;
+  top: 45px;
+  left: 0;
+}
+.transparent {
+  background-color: transparent;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.options::-webkit-scrollbar {
+  width: 0px;
+}
+.options .option {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  transitio:  all 0.3s;
+  cursor: pointer;
+}
+.options .option input {
+  width: initial;
+  cursor: pointer;
+}
+.selectlabel {
+  width: 100%;
+}
+.selected .select {
+  color: var(--theme-color)
+}
+.select {
+  width: 100%;
+  background-color: var(--gray);
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: var(--gray-text);
+  cursor: pointer;
+  margin: 15px 0;
+}
+.select:hover, .transparent:hover + .selectlabel .select, .option:hover  {
+  background-color: var(--light)
+}
+.options-enter-done {
+  opacity: 1;
+}

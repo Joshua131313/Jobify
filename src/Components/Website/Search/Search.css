@@ -1,0 +1,198 @@
+
+.search {
+  transform: translateY(-70px);
+  z-index: 10;
+}
+.search .abs{
+  position: absolute;
+  left: -12%;
+  top: 20%;
+  width: 40px;
+  height: 40px;
+}
+ 
+.search .filters .controls{
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+.controls > div {
+  width: 50%;
+  margin-right: 10px;
+  margin-top: 10px
+}
+.search .themeInput, .search .divinput {
+  background-color: #fff;
+  padding: 10px 20px;
+  margin: 0px;
+  height: 50px;
+  border-radius: 30px;
+  box-shadow: var(--light-shadow)
+}
+
+.divinput {
+  display: flex;
+  align-items: center
+}
+.divinput >i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: none;
+  font-size: 18px;
+}
+.divinput > i:active {
+  transform: translateY(-50%) scale(0.95);
+}
+.divinput span {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 300px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden
+}
+.search .themeInput {
+  padding-left: 40px
+}
+.divinput span small {
+  margin-left: 10px
+}
+.controls .inputsearch i{
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+.controls .inputsearch .fa-search {
+  left: 18px
+}
+.controls .inputsearch .fa-plus {
+  right: 18px;
+  box-shadow: none
+}
+.controls .inputsearch .fa-plus:active {
+  transform: translateY(-50%) scale(0.96);
+}
+.filteritems {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  flex-direction: column
+}
+.filtertitle{
+    padding: 0 20px;
+    height: 40px;
+    background-color: var(--theme-color);
+    display: none;
+    border-radius: 10px;
+    align-items: center;  
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+    width: 120px;
+    max-width: 100%;
+}
+.filtertitle:active {
+  transform: scale(0.95)
+}
+.filtertitle:hover {
+  filter: brightness(110%)
+}
+ .filtertitle span,.filtertitle i {
+   color: #fff
+ }
+.filtertitle i {
+  margin-right: 10px
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filterscont {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--light-shadow);
+  display: flex;
+  flex-wrap: wrap;
+  transition: top 0.3s , opacity 0.3s;
+  justify-content: center;
+  opacity: 0;
+  top: 100px;
+  transform: scale(0);
+  z-index: 10;
+  max-height: 60vh;
+  overflow-y: scroll;
+}
+.filterscont::-webkit-scrollbar {
+  width: 3px
+}
+.filterscont-enter-done {
+  opacity: 1;
+  top: 0;
+  transform: scale(1);
+}
+
+
+
+.filteritems .fa-times {
+  width: 25px;
+  height: 25px;
+  font-size: 15px;
+  position: absolute;
+  right:15px;
+  top: 10px  
+}
+
+.filteritemsrow {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  justify-content: flex-start
+}
+.filteritemsrow > div:first-of-type {
+  margin-left: 0;
+}
+.filteritemsrow .filtercategory {
+  margin:  5px;
+  padding: 10px;
+  background-color: var(--light);
+  font-size: 12px;
+  border-radius: 15px;
+  color: var(--theme-color);
+  border: solid 1px var(--theme-color);
+}
+.filteritemsrow .filtercategory .fa-times {
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  top: -5px;
+  right: -5px;
+  transform: scale(0);
+}
+.filteritemsrow .filtercategory .fa-dollar-sign {
+  margin-right: 2px;
+  font-size: 10px
+}
+.filtercategory:hover .fa-times {
+    transform: scale(1)
+}
+.textoverflowing  {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .filtertitle {
+    display: flex
+  }
+  .boxes {
+    display: none;
+  }
+
+}

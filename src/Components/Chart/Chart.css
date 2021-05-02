@@ -1,0 +1,47 @@
+.chart {
+  height: 100%;
+  width: 100%;
+
+}
+.typescontainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px
+}
+.app .apexcharts-legend.position-top.apexcharts-align-center  {
+  display: flex;
+  justify-content: flex-end 
+}
+.typescontainer > div {
+  display: flex;
+}
+.type {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+  color: var(--gray-text);
+  font-size: 13px;
+  transition: all 0.3s
+}
+.type i {
+  margin-right: 5px;
+  color: var(--gray-text)
+}
+.activetype {
+  color: var(--theme-color);
+}
+.activetype i {
+  color: var(--theme-color)
+}
+.chart #apexchartsarea {
+}
+.chart > div {
+  height: 200px
+}
+.chart svg {
+
+}
+.apexcharts-toolbar {
+  
+}

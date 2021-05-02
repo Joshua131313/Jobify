@@ -1,0 +1,122 @@
+
+
+.notificationcard{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 220px;
+  height: 220px;;
+  justify-content: space-between;
+  background-color: var(--gray);
+  border-radius: 10px;
+  transition: all 0.3s;
+  margin: 10px
+}
+.notificationcard.bigger {
+  height: 260px;
+  width: 260px
+}
+.notificationcard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 17px 19px -10px var(--theme-color);
+}
+
+.notificationcard.rednoti:hover {
+  box-shadow: 0px 17px 19px -13px var(--red);
+}
+.notificationcard.greennoti:hover {
+  box-shadow: 0px 17px 19px -13px var(--green);
+}
+.alljobs .notificationcard:active {
+  box-shadow: none
+}
+.notificationcard .user {
+  box-shadow: var(--light-shadow);
+  justify-self: flex-start;
+  align-self: flex-start;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.notificationcard .user small span {
+  max-width: 90px
+}
+.notificationcard .user:hover small span:first-of-type {
+  color: var(--theme-color)
+}
+.notificationcard .notiinfo > div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px
+}
+.notificationcard .rednoti {
+  color: var(--red);
+}
+.notificationcard .notiinfo > i {
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-size: 20px
+}
+.notiinfo > i.rednoti::before {
+  content: '\f06a';
+}
+.notiinfo > i.themenoti::before {
+  content: '\f0e0';
+  font-weight: bold;
+}
+.notiinfo > i.timer::before {
+  content: '\f253'
+}
+.notiinfo > i.greennoti::before {
+  content: '\f058'
+}
+.notificationcard .deleteicon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  color: var(--red);
+}
+.deleteicon:hover {
+  color: #fff;
+  background-color: var(--red)
+}
+.notificationcard .greennoti {
+  color: var(--green);
+}
+.notificationcard .themenoti {
+  color: var(--theme-color)
+}
+.notilink {
+  transition: all 0.3s;
+}
+
+.notilink:hover {
+  color: var(--theme-color);
+  text-decoration: underline
+}
+.rednoti .notilink:hover {
+  color: var(--red)
+}
+.greennoti .notilink:hover {
+  color: var(--green)
+}
+.acceptrejectbtns {
+  display: flex;
+}
+.acceptrejectbtns i {
+  width: 30px;
+  height: 30px;
+}
+.acceptrejectbtns i:first-of-type {
+  margin-right: 5px
+}
+.acceptrejectbtns .fa-check-circle:hover {
+  background-color: var(--green);
+}
+.acceptrejectbtns .fa-pennant:hover {
+  background-color: var(--red)
+}
+.mrnone.acceptrejectbtns i{ 
+  margin-right: 0
+}

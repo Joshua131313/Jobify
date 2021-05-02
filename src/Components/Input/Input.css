@@ -1,0 +1,47 @@
+.themeInput {
+  margin: 15px 0;
+}
+.themeLabel span {
+  transition: all 0.3s;
+  cursor: text;
+  pointer-events: none;
+  color: var(--gray-text)
+}
+.themeInput:valid + span, .themeInput:focus + span{
+  top: 9px;
+  color: var(--theme-color);
+  font-size: 10px;
+
+}
+.themeInput:disabled + span {
+  display: none  
+}
+  .themeLabel {
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+ .themeLabel span{
+  position: absolute;
+  z-index: 1;
+  top: 23px;
+  font-size: 15px;
+  left: 10px;  
+}
+
+.themeLabel .fa-eye, .themeLabel .fa-eye-slash, .themeLabel .fa-shield-check{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.colorinputcontainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.colorinputcontainer input {
+  width: 55px;
+  height: 37px;
+  cursor: pointer;
+}

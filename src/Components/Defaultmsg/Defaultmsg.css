@@ -1,0 +1,29 @@
+.defaultmsg {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--theme-color);
+  border-radius: 5px;
+  width: 90%;
+  max-width: 400px;
+}
+.defaultmsg:hover  {
+  background-color: var(--theme-second)
+}
+.defaultmsg:active {
+  background-color: var(--theme-second)
+}
+.defaultmsg span {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.defaultmsg .graytext {
+  color: #fff
+}
+.app .defaultmsg i {
+  color: #fff;
+  margin-right: 10px
+}

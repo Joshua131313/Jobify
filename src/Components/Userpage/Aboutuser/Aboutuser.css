@@ -1,0 +1,30 @@
+.aboutuser {
+  padding: 0 15%;
+  max-height: 50vh
+}
+.aboutuser::-webkit-scrollbar {
+  width: 0px
+}
+.spacebetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  height: 40px
+}
+.spacebetween i {
+  margin-right: 10px
+}
+.aboutuser .locationtext textarea {
+  padding: 0;
+  width: 100%;
+  border-radius: 0;
+  max-height: 40px;
+  color: var(--gray-text);
+  overflow-y: scroll;
+}
+@media (max-width: 800px) {
+  .aboutuser {
+    padding: 0
+  }
+}

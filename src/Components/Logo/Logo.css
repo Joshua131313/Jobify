@@ -1,0 +1,17 @@
+
+.logo {
+  height: 50px;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.logo h3 {
+  font-size: 20px
+}
+.logo img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--gray);
+  margin-right: 10px;
+}

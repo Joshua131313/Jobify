@@ -1,0 +1,54 @@
+.web {
+  min-height: calc(100vh - 70px);
+  background-color: var(--gray);
+  padding: 20px 15%
+}
+.web .map {
+  box-shadow: var(--light-shadow)
+}
+.web .mapcont {
+  height: 400px;
+}
+.web .jobspage {
+  transform: translateY(-50px);
+}
+.jobspage .job {
+  background-color: #fff
+}
+.job .sectioncont .user a {
+  display: flex;
+  flex-direction: row-reverse
+}
+.job .user a img{
+  margin-right: 10px
+}
+.alljobs .flexed {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.webscrolledtop .scrolltotop{
+  opacity: 0;
+  pointer-events: none
+}
+.scrolltotop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  pointer-events: initial
+}
+@media (max-width: 750px) {
+  .web {
+    padding: 20px 40px
+  }
+}
+@media (max-width: 560px) {
+  .web .alljobs {
+    display: flex;
+    flex-direction: column;
+  
+  }
+}

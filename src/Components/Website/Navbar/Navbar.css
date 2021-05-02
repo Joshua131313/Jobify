@@ -1,0 +1,62 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(7, 7, 7, 0);
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 300;
+  transition: all 0.3s;
+  backdrop-filter: blur(5px)
+}
+.navbar.scrolled {
+  background-color: #fff;
+  box-shadow: var(--shadow)
+}
+.navspacer {
+  height: 70px;
+}
+.navbar > div {
+  height: 100%;
+  display: flex;
+  align-items: center
+}
+.navbar .rightside a{
+  justify-content: center;
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  transition: all 0.3s;
+  border-bottom: solid 3px transparent;
+  color: #000;
+  font-size: 14px;
+  text-align: center
+}
+.navbar.scrolled a {
+  color: var(--gray-text)
+}
+.navbar .nostyles {
+  border-bottom: solid 2px transparent
+}
+.navbar .nostyles:hover {
+  border-bottom: solid 2px transparent
+}
+.navbar a.activelink, .navbar a:hover {
+  border-bottom: solid 3px var(--theme-color);
+  color: #000;
+}
+.navbar .rightside .user {
+  height: 100%;
+}
+.navbar .midside a{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px
+}

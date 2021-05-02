@@ -1,0 +1,186 @@
+.account {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.accountsidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray);
+  justify-content: space-around;
+  overflow-y: scroll;
+}
+.accountsidebar::-webkit-scrollbar {
+  width: 0px
+}
+.accountsidebar::-webkit-scrollbar {
+  width: 0px;
+}
+.accountsidebar h2 {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.accountsidebar .uximg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.accountsidebar .accountlinks{
+  display: flex;
+  flex-direction: column;
+  
+}
+.accountlinks a {
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  border-right: solid 2px transparent;
+  transition: all 0.3s;
+}
+.accountlinks a span {
+  font-size: 13px
+}
+.accountlinks a  i {
+  color: #000
+}
+
+
+.accountlinks a:hover{
+  border-right: solid 2px var(--theme-second);
+  color: var(--theme-second);
+  background-color: var(--light)
+}
+.accountlinks a:hover i  {
+  color: var(--theme-second)
+}
+.accountlinks .activeaccountlink  {
+  border-right: solid 2px var(--theme-color);
+  color: var(--theme-color);
+  background-color: var(--light)
+}
+.accountlinks .activeaccountlink i {
+  color: var(--theme-color)
+}
+.accountwindow {
+  width: 90%;
+  height: 90%;
+  box-shadow: var(--shadow);
+  background-color:#fff;
+  border-radius: 10px;
+  justify-self: center;
+  align-self: center;
+  padding: 30px 15%;
+  overflow-y: scroll
+}
+.accountwindow::-webkit-scrollbar {
+  width: 6px
+}
+.accountwindow::-webkit-scrollbar-track {
+background-color: rgb(0,0,0,0)
+}
+.tabtitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tabtitle .user {
+  font-size: 14px
+}
+.accounttab > div{
+  margin: 15px 0
+}
+.companyinfo textarea {
+  width: 100%
+}
+.accounttab .img{
+  width: 60px;
+  height: 60px
+}
+.accounttab .flexed {
+  flex-direction: row-reverse;
+}
+.accounttab .img i {
+  font-size: 13px;
+  width: 25px;
+  height: 25px;
+  z-index: initial;
+}
+.accounttab .btnscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.accounttab .btnscontainer button {
+  margin: 5px
+}
+.accounttab .btnscontainer button:disabled {
+  filter: brightness(80%);
+  background-color: var(--theme-color);
+  cursor: no-drop;
+}
+.resetpassword {
+  margin: 15px 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.resetpassword .themeBtn{
+  height: 25px;
+  font-size: 12px;
+  width: 80px;
+  margin-left: 5px
+}
+.resetpassword .themeBtn:hover {
+  background-color: var(--theme-second)
+}
+.color {
+  position: relative;
+  display: block;
+  width: 50px;
+}
+.customizeinputs {
+  display: flex;
+  flex-direction: column
+}
+.customizeinputs .themeBtn {
+  align-self: flex-end
+}
+.account .accountwindow .accounttab {
+  z-index: 1;
+
+}
+
+@media (max-width: 900px) {
+  .accountwindow {
+    padding: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .account .accountsidebar .accountlinks a{
+    padding: 20px 5px;
+    justify-content: flex-end
+  }
+  .account .accountsidebar .accountlinks a i {
+    display: none
+  }
+}
+@media (max-width: 660px) {
+  .account .accountsidebar .accounttitle h2 {
+    font-size: 18px
+  }
+  .account .accountsidebar .accountlinks a i {
+    display: block;
+  }
+  .account .accountsidebar .accountlinks a span {
+    display: none
+  }
+  .account .accountsidebar .accountlinks a{
+    justify-content: center
+  }
+}

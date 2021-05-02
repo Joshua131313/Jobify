@@ -1,0 +1,110 @@
+.routes {
+  padding: 20px 15%;
+  background-color: var(--gray);
+  overflow-y: scroll;
+  max-height: 100vh;
+  transition: all 0.3s;
+}
+.routesnopadding .routes {
+  padding: 0
+}
+.customroute .routes{
+  padding: 0;
+}
+.customroute .routes::-webkit-scrollbar {
+  width: 0px;
+}
+.overflow {
+  width: 100%;
+  height: calc(100vh - 40px);
+  box-shadow: var(--light-shadow);
+  border-radius: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden
+}
+.routes .user a{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: left;
+}
+.routes .user img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px
+}
+.routes .user p {
+  color: var(--gray-text)
+}
+.routes .flexed {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.routes .defaultmsg {
+  align-self: center;
+  margin-top: 15px;
+  margin-bottom: 5px
+}
+.routes .defaultmsg small, .routes .defaultmsg i {
+  color: #fff;
+}
+.routes .defaultmsg small {
+  margin-left: 5px
+}
+.flat {
+  border-radius: 10px;
+  background-color: #fff
+}
+.notifications-wrapper {
+  right: 0;
+  display: flex;
+  flex-direction: column-reverse
+}
+.notifications-tr {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.notifications-wrapper .notification-dismiss {
+  display: none
+}
+
+.notification-message {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.notification-message > div {
+  display: flex;
+  align-items: center
+}
+.notification-message > div i {
+  margin-right: 5px;
+}
+.notifications-tl {
+  min-width:420px;
+}
+.notification-message .fa-times {
+  display: flex;
+  align-items: center;
+}
+.notifications-tl .themeBtn{
+  width: 80px;
+  font-size: 10px;
+  padding: 0;
+  height: 20px;
+  border-radius: 5px;
+  margin-left: 5px;
+  z-index: 111111;
+}
+.notifications-tl .themeBtn:hover {
+  background-color: var(--theme-second)
+}
+@media (max-width: 900px){
+  .routes {
+    padding: 20px 30px;
+
+  }
+}

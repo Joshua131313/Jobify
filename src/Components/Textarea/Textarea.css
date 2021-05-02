@@ -1,0 +1,27 @@
+.resizabletextarea {
+  outline: none;
+  border: none;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  resize: none;
+  padding: 10px;
+  margin: 15px 0;;
+  width: 100%;
+  cursor: pointer;
+}
+.resizabletextarea::-webkit-scrollbar {
+  width: 0px
+}
+.resizabletextarea +span {
+  position: absolute;
+  left: 10px;
+  top: 23px;
+  color: var(--gray-text);
+  transition: all 0.3s;
+  pointer-events: none
+}
+.resizabletextarea:valid + span, .resizabletextarea:focus + span {
+  top: 9px;
+  color: var(--theme-color);
+  font-size: 9px
+}

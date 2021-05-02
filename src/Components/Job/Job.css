@@ -1,0 +1,182 @@
+.job {
+  display: flex;
+  margin: 20px 0;
+  height: auto;
+  background-color: var(--gray);
+  padding: 10px;
+  border-radius: 10px;
+  transition: height 0.3s;
+
+}
+.job::-webkit-scrollbar {
+  width: 2px;
+}
+.editjob {
+  overflow-y: scroll;
+  height: 420px;
+}
+
+.job > div {
+  width: 100%;
+}
+.job .user {
+  padding: 5px;
+  background-color: var(--light);
+  border-radius: 10px;
+}
+.job .user:active {
+  transform: scale(0.95);
+}
+.job .user:hover {
+  background-color: var(--light-blue);
+}
+.job .user .joblisting img {
+  width: 40px;
+  height: 40px;
+}
+.job .user .joblisting span {
+  color: #000;
+}
+.job .user time {
+  color: var(--gray-text);
+}
+.job .user .joblisting {
+  text-align: right;
+}
+
+.sectionimg img:hover {
+  filter: brightness(85%);
+}
+.sectionimg img:active {
+  transform: scale(0.99);
+}
+.sectionimg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.job .sectioncont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: right;
+  flex: 0 0 60%
+} 
+.sectioncont .info {
+  padding: 20px 10px;
+}
+.sectioncont .info > *{
+  margin: 10px 0
+}
+
+.sectioncont .info > a {
+  display: block;
+  margin: 20px 0
+}
+.sectioncont .info h2 {
+  transition: all 0.3s;
+  padding: 0;
+}
+.sectioncont .info h2:hover {
+  color: var(--theme-second);
+}
+
+.jobs .job .themeInput {
+  text-align: right;
+  text-transform: capitalize;
+}
+.jobs .job .themeLabel span {
+  right: 10px;
+}
+
+.job .sectioncont .themeBtn {
+  margin: 5px;
+  width: auto;
+  padding: 5px 15px;
+  background-color: var(--theme-second)
+}
+.jobs .job .warning.themeBtn {
+  background-color: rgba(0, 0, 0, 0);
+}
+.jobs .job .warning.themeBtn:hover {
+  background-color: var(--red);
+  border: solid 2px transparent;
+  color: #fff
+}
+.jobs .job .warning.themeBtn:hover i {
+  color: #fff
+}
+
+.jobs .job .themeBtn.fullwidth {
+  width: 100%;
+  display: block;
+}
+.jobs .job .themeBtn.outline {
+  background-color: #fff;
+  border: solid 2px var(--theme-second);
+  color: var(--theme-second);
+}
+.jobs .job .themeBtn.outline i {
+  color: var(--theme-second);
+}
+.jobs .job .themeBtn.uselogo {
+  display: block;
+  width: 250px;
+}
+.jobdescription {
+  max-height: 400px;
+  overflow-y: scroll
+}
+.jobdescription::-webkit-scrollbar {
+  width: 2px
+}
+@media (max-width: 860px) {
+  .job {
+    flex-direction: column;
+    height: auto;
+    text-align: left;
+  }
+  .job .sectioncont {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .job .user {
+    align-self: flex-end;
+  }
+  .job .user .joblisting {
+    text-align: left;
+  }
+
+  .job .sectionimg .img, .job .info  {
+    width: 100%
+  }
+  .loader {
+    width: initial
+  }
+  .job div[aria-busy="true"] svg,
+  div[aria-busy="true"] {
+    width: initial;
+  }
+  .job .user {
+    width: initial;
+  }
+  .editjob .themeLabel .themeInput {
+    text-align: left;
+  }
+  .jobs .job .themeBtn {
+    width: auto;
+    display: flex;
+  }
+  .jobs .job .themeBtn.uselogo {
+    display: block;
+    width: 100%;
+  }
+  .gridview .sectionimg img {
+    height: 100% ;
+  }
+  .sectionimg img {
+    height: 250px;
+   }
+}

@@ -1,0 +1,90 @@
+.applications .title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 20px
+}
+.applications .title  h2{
+  padding: 0
+}
+.applications .title i {
+  font-size: 20px;
+  margin-left: 10px
+}
+ .fa-pennant {
+  color: var(--red)
+}
+
+.alljobs.warningjobs .jobcard:hover {
+  box-shadow: 0px 17px 19px -13px var(--red);
+}
+.alljobs.warningjobs .jobcard .jobdescription li:hover{
+  color: var(--red)
+}
+.alljobs.warningjobs .jobcard .editicon i{
+  color: var(--red);
+}
+.alljobs.successjobs .jobcard .editicon i:hover {
+  background-color: var(--green);
+  color: #fff
+}
+.alljobs.successjobs .jobcard:hover {
+  box-shadow: 0px 17px 19px -13px var(--green);
+}
+.alljobs.successjobs .jobcard .jobdescription li:hover{
+  color: var(--green)
+}
+.alljobs.successjobs .jobcard .editicon i{
+  color: var(--green);
+}
+.alljobs.successjobs .jobcard .editicon i:hover {
+  background-color: var(--green);
+  color: #fff
+}
+.applicationsroute .recenttitle {
+  margin-top: 0;
+  border-radius: 0 0 10px 10px;
+  max-height: calc(100vh - 250px);
+  min-height: calc(100vh - 250px);
+  overflow-y: scroll
+}
+.applicationsroute .recenttitle::-webkit-scrollbar {
+  width: 0px
+}
+.applicationstabs {
+  width: 100%;
+  display: flex;
+  background-color: var(--gray);
+  margin-top: 10px
+}
+.applicationstabs a {
+  padding: 20px 10px;
+  background-color: var(--gray);
+  text-align: center;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.applicationstabs a i {
+  margin-right: 5px
+}
+.applicationstabs .activetab {
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+.clearnotibtn {
+  width: auto;
+  padding: 0 10px;
+  background-color: #000;
+}
+.clearnotibtn:hover {
+  background-color: var(--red)
+}
+@media (max-width: 700px) {
+  .applicationstabs a span{
+    display: none
+  }
+}

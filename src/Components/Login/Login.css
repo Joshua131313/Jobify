@@ -1,0 +1,139 @@
+
+
+.login-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 100vh;
+  box-shadow: var(--shadow);
+
+}
+.login {
+  overflow-y: scroll
+}
+.login::-webkit-scrollbar {
+  width: 0
+}
+.loginicon {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+.login-container .inputscontainer  {
+  height: 100%
+}
+.login-container .inputscontainer form{
+  height: 100%;
+
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 80%;
+  left: 50%;
+}
+
+.login-container .gog-btn{
+  background-color: #dd4b39;
+  color: #fff;
+}
+.login-container .gog-btn i {
+  color: #fff;
+}
+
+.loginbtns button {
+  padding: 15px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.loginbtns i{
+  font-size: 16px;
+}
+.login-container .gog-btn:hover {
+  background-color: white;
+  color: #dd4b39
+}
+.login-container .gog-btn:hover i{
+  color: #dd4b39
+}
+.login-container .fb-btn {
+  background-color: #4c69ba;
+  color: white;
+}
+.login-container .fb-btn i {
+  color: white;
+}
+.login-container .fb-btn:hover {
+  background-color: white;
+  color: #4c69ba;
+}
+.login-container .fb-btn:hover i {
+  color: #4c69ba;
+}
+.loginBanner .img-authbtns {
+  height: 100%;
+}
+.loginBanner .img-authbtns img{
+  width: 100%;
+  height: 100%;
+}
+.infoimg {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  padding: 40px 10px;
+  align-items: center;
+  text-align: center
+}
+.login input {
+  width: 100%
+}
+.loginoptions {
+  text-align: center;
+  width: 100%;
+}
+.loginoptions small {
+  width: 100%
+}
+.loginoptions small  span {
+  font-weight: 550;
+  transition: all 0.3s
+}
+.forgotPasswordButton {
+  color: var(--theme-color)
+}
+.forgotPasswordButton:hover {
+  color: var(--theme-light)
+}
+.loginoptions small span:hover {
+  text-decoration: underline;
+  color: var(--theme-color)
+}
+.infoimg {
+  width: 100%
+}
+.prevBtn {
+  width: 100%;
+  margin: 10px 0;
+}
+.prevBtn i{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 17px
+}
+.errormsgLogin {
+  color: var(--red)
+}

@@ -1,0 +1,41 @@
+.body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 210px 1fr;
+}
+.app .bodyhide {
+  grid-template-columns: 30px 1fr;
+}
+.hide {
+  background-color: #09012f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 10px 10px 0;
+  box-shadow: var(--light-shadow)
+}
+
+.bodyhide .sidebar .fa-arrow-right{
+  color: #fff;
+  left: 0
+}
+.bodyhide .sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px
+}
+.body.hidesidebar {
+  display: block;
+}
+.body.hidesidebar .sidebar {
+  display: none
+}
+.body.hidesidebar .routes {
+  height: 100vh
+}
+@media (max-width: 800px) {
+  .body {
+    grid-template-columns: 150px 1fr
+  }
+}

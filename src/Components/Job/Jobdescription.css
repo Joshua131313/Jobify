@@ -1,0 +1,19 @@
+.jobdescription ul {
+  padding-left: 0
+}
+.jobdescription li {
+  margin: 12px 0;
+  transition: all 0.3s;
+}
+.jobdescription li:hover {
+  color: var(--theme-color)
+}
+.jobdescription li::before{
+  font-family: "Font Awesome 5 Pro";  
+  content: "\f192";
+  margin-right: 10px;
+  font-size: 10px
+}
+.jobdescription li {
+  list-style: none
+}

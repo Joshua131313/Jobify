@@ -1,0 +1,8 @@
+.hrtitle {
+  display: flex;
+  justify-content: center;
+  align-items:center
+}
+.hrtitle span {
+  margin-right: 10px
+}

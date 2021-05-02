@@ -1,0 +1,94 @@
+.background {
+
+}
+
+.create::-webkit-scrollbar {
+  width: 0
+}
+.createinfo {
+  padding: 20px;
+}
+
+.createinfo textarea {
+ min-width: 100%
+}
+.create .tabs {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.app .create  .createinfo .graytext {
+  padding: 0 10px;
+  color: #000
+}
+.create .tabs a {
+  color: var(--gray-text);
+  padding:18px 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center
+}
+.create .tabs .activetab {
+  color: var(--theme-color);
+  box-shadow: var(--light-shadow)
+}
+.create .jobmap  {
+  height: 400px;
+  width: 100%;
+  margin-top: 20px
+}
+.coverimgs {
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap
+}
+.coverimgs > div {
+  margin: 10px
+}
+.coverimgs div button {
+  margin-top: 10px;
+  width: 250px
+}
+.coverimgs input {
+  width: 250px
+}
+.finalize h2 {
+  margin-top: 10px
+}
+#imp .graytext {
+  color: var(--gray-text)
+}
+.finalize .infojob .btnd{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.btnd button {
+  width: 182px
+}
+.finalize .infojob .btnd button:disabled {
+  filter: brightness(70%);
+  cursor: auto;
+  cursor: no-drop
+}
+.btnd button:disabled i, .btnd button:disabled span {
+  pointer-events: none
+}
+.create .mapcont {
+  height: 100%
+}
+@media (max-width: 670px){
+  .create .tabs a{
+    font-size: 14px;
+    padding: 18px 5px
+  }
+ .finalize .overviewinfo {
+    display: flex;
+    flex-direction: column;
+  }
+  .finalize .overviewinfo input {
+    margin-top: 10px
+  }
+}

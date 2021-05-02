@@ -1,0 +1,27 @@
+.col .linkcont {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);  
+}
+
+
+.expandtitle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  padding: 10px 0
+}
+.col .linkcont {
+  transition: all 0.3s;
+  padding-left: 0;
+
+}
+.col .linkcont:hover {
+  color: var(--theme-color);
+  text-decoration: underline
+}
+.columnlinks p {
+  font-size: 13px;
+}

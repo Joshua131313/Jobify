@@ -1,0 +1,38 @@
+.jobheader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 200px
+}
+.jobheader .sidebanner {
+  height: 200px
+}
+.sidebanner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain
+}
+.webjobtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+ .webjobtitle  > div{
+  padding: 30px 30px;
+  box-shadow: var(--light-shadow);
+  border-radius: 4px;
+  background-color: #fff;
+
+}
+ .webjobtitle span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0
+}
+
+ .webjobtitle span h3 {
+  font-size: 15px;
+}
+ .webjobtitle span span {
+  font-size: 13px
+}

@@ -1,0 +1,31 @@
+.themeBtn {
+  background-color: var(--theme-color);
+  color: #fff;
+  transition: all 0.3s;
+  border-radius: 10px;
+  border: solid 2px rgba(255, 0, 0, 0);
+}
+.themeBtn:hover {
+  filter: brightness(110%)
+}
+.themeBtn i {
+  color: #fff;
+  margin-right: 10px;
+}
+.warning.themeBtn {
+  border: solid 2px var(--red);
+  background-color: rgba(255, 0, 0, 0);
+  color: var(--red)
+}
+.warning.themeBtn i {
+  color: var(--red);
+}
+.warning.themeBtn:hover {
+  background-color: var(--red);
+  border: solid 2px rgba(255, 0, 0, 0);
+  color: #fff
+}
+.warning.themeBtn:hover i {
+  color: #fff
+}
+
